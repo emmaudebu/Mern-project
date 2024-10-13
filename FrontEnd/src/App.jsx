@@ -1,10 +1,15 @@
+import { Box } from "@chakra-ui/react";
 import "./App.css";
 
 function App() {
   return (
-    <>
-      <h1>Hello</h1>
-    </>
+    <Box minH={"100vh"}>
+      {/* <NavBar/> */}
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/create" element={<CreatePage />} />
+      </Routes>
+    </Box>
   );
 }
 
